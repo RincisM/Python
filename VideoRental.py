@@ -1,0 +1,6 @@
+print("Rentals\nNew Videos:Rs.75/day\nOld Videos:Rs.50/day")
+new = int(input("Count of New Video(s): "))
+old = int(input("Count of Old Video(s): "))
+day = int(input("Mention the No. of days: "))
+cost = (day*((new*75)+(old*50)))
+print("The Total cost of the rental of", new,"New video(s) and", old,"Old video(s) is: Rs.", cost,"\nThe Cost per day is: Rs.", cost/day)

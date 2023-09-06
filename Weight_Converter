@@ -1,0 +1,16 @@
+print("Lbs <=> Kg converter\n")
+name = input("Enter your Name: ")
+weight = float(input("Enter your Weight: "))
+convert = input('''How you would like to convert?
+To convert to pounds, type L (We assume that you have entered your weight in Kg(s))
+To convert to Kilograms, type K (we assume that you have entered your weight in Lbs)
+''')
+
+if(convert.upper() == 'L'):
+    calc = weight / 0.45
+    print("Hi {}, your weight in Pounds is: {:.2f} Lbs".format(name, calc))
+elif(convert.upper()== 'K'):
+    calc = weight * 0.45
+    print("Hi {}, your weight in Kg is: {:.2f} kg".format(name, calc))
+else:
+    print("Enter valid Letters like 'L' or 'K'")

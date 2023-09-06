@@ -1,0 +1,14 @@
+import random
+import math
+print("Guessing Game\nGuess a Number in the range 1-10 (inclusive) in three attempts\n")
+i=0
+num = math.ceil(random.random()*10)
+while(i<3):
+    guess = int(input('Your Guess: '))
+    if(guess==num):
+        print("You win!")
+        break
+    else:
+        print("Sorry it's Wrong, You got {} chances left".format((3-i-1)))
+    i += 1
+print("The Number is: {}".format(num))
